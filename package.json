@@ -1,15 +1,11 @@
 {
-  "name": "next-view-transition-example",
+  "name": "digimon-library",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
-    "fetch-digimon": "tsx scripts/fetch-and-merge-digimon.ts",
-    "generate-sql": "tsx scripts/import-to-database.ts",
-    "download-images": "tsx scripts/download-digimon-images.ts",
-    "enrich-data": "tsx scripts/enrich-digimon-data.ts"
+    "lint": "next lint"
   },
   "dependencies": {
     "@radix-ui/react-avatar": "^1.1.3",
