@@ -9,9 +9,16 @@
   .text-balance {
     text-wrap: balance;
   }
+
+  .--is-loaded {
+    overflow: hidden;
+
+    .custom-grid {
+      transition: transform 0.45s cubic-bezier(0.33, 1, 0.68, 1);
+      cursor: grab;
+    }
+  }
 }
-
-
 
 @layer base {
   :root {
@@ -74,10 +81,9 @@
   display: none;
 }
 
-
 @supports (view-transition-name: test) {
   [data-support] [data-support-yes] {
-      display: flex;
+    display: flex;
   }
   [data-support] [data-support-no] {
     display: none;
@@ -86,7 +92,7 @@
 
 @supports not (view-transition-name: test) {
   [data-support] [data-support-yes] {
-      display: none;
+    display: none;
   }
   [data-support] [data-support-no] {
     display: flex;
